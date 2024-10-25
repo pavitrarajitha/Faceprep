@@ -1,0 +1,40 @@
+Write a program to generate the following series 0,2,8,14,...,34.
+Input Format
+
+The input is an integer that denotes 'n'.
+Output Format
+
+Print the series and refer to the sample output for formatting.
+Sample Input 1
+
+10
+Sample Output 1
+
+0 2 8 14 24 34 48 62 80 98
+
+
+Case 1
+Case 2
+Input (stdin)
+10
+
+Output (stdout)
+0 2 8 14 24 34 48 62 80 98
+
+programm
+
+n = int(input())
+current_term = 0
+result = []
+for i in range(n):
+    result.append(current_term)
+    if i == 0:
+        current_term += 2  
+    elif i == 1:
+        current_term += 6  
+    else:
+        if (i - 1) % 2 == 0: 
+            current_term += 6 + ((i - 1) // 2) * 4  
+        else:  
+            current_term += 6 + ((i - 2) // 2) * 4  
+print(" ".join(map(str, result)))
