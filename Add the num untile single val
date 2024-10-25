@@ -1,0 +1,26 @@
+Write a program to find the sum of digits of a number until the sum becomes a single digit.
+Input Format
+Input format consists of a number
+Output Format
+Output format consists of an integer
+Sample Input 0
+8945623
+Sample Output 0
+8
+Case 1
+Case 2
+Input (stdin)
+78945623
+Output (stdout)
+8
+
+program
+
+n = int(input( ))
+while n >= 10:
+    digit = 0
+    while n > 0:
+        digit += n % 10
+        n //= 10
+    n = digit
+print(n)
