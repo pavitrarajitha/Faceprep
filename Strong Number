@@ -1,0 +1,33 @@
+A number can be said as a strong number when the sum of the factorial of the individual digits is equal to the number.
+For example, 145 is a strong number. 1! + 4! + 5! = 145. Write a program to check whether a given number is a strong number or not.
+Input Format
+Input consists of 1 integer.
+Output Format
+If it is a strong number print "Yes" or print "No"
+Sample Input
+145
+Sample Output
+Yes
+Explanation 0
+= 1! + 4! +5! = 1+24+120 = 145
+Case 1
+Case 2
+Input (stdin)
+145
+Output (stdout)
+Yes
+
+PROGRAMM
+
+import math
+n = int(input())
+number = n
+s = 0
+while n > 0:
+    digit = n % 10  
+    s += math.factorial(digit)  
+    n //= 10  
+if s == number:
+    print("Yes")
+else:
+    print("No")
