@@ -1,0 +1,54 @@
+The Modern World Cinderella was happy to meet Prince Charming at the ballroom and she danced with him happily. While she was dancing, Prince wanted to check whether Cinderella is a perfect match for him. He asked her a question to check her knowledge of Arrays. Can you help Cinderella to write a program to find whether the two arrays are the same or not?
+Note: Two arrays are said to be the same if the sum of both arrays is the same and the size of the arrays is the same.
+Input Format
+Input consists of 2 integers and 2 arrays. The integers should correspond to the size of the arrays.
+Output Format
+If two arrays are the same, display "Same" else display "Not Same"
+Sample Input 0
+
+4
+
+4
+
+1
+
+2
+
+3
+
+4
+
+1
+
+2
+
+3
+
+4
+Sample Output 0
+Same
+Case 1
+Case 2
+Input (stdin)
+4
+4
+1
+2
+3
+4
+1
+2
+3
+4
+Output (stdout)
+Same
+
+programm
+a=int(input())
+b=int(input())
+c=[int(input) for i in range(a)]
+d=[int(input() for i in range(b)]
+if a==b and sum(c)==sum(d):
+    print("Same")
+else:
+    print("Not Same")
